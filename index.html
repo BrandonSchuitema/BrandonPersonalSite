@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<body>
+    <input type="number" name="price" id="price">
+    <button id="add">Test Button</button>
+
+    <p>List of Read Books</p>
+    <ul id="list">
+        <li>Read Books:</li>
+    </ul>
+
+    <script>
+        const list = document.getElementById('list');
+        const price = document.getElementById('price');
+    
+        const add = document.getElementById('add');
+        add.addEventListener('click', (event) => {
+            const li = document.createElement('li');
+            const liText = document.createTextNode(price.value);
+            li.appendChild(liText);
+            list.appendChild(li);
+    
+            price.value = '';
+        })
+    </script>
+</body>
+
+<div>
+    <p>The books that the Brandon has read will go here.</p>
+    <p>This site will become the electronic version of my Book Journal. Something that can be updated from anywhere.</p>
+</div>
+
+<form>
+    <p>Add new Books:</p>
+    <hr>
+    <div>
+        <label for="bname">Name:</label>
+        <input type="text" id="bname" name="bname" placeholder="Name...." required>
+        <label for="brate">Rating:</label>
+        <input type="number" id="brate" name="brate" placeholder="5..." min="0" max="5" required>
+        <label for="btalk">Description</label>
+        <input type="text" id="btalk" name="btalk" placeholder="Description...">
+        <label for="bsdate">Start Date</label>
+        <input type="date" id="bsdate" name="bsdate" required>
+        <label for="bedate">End Date</label>
+        <input type="date" id="bedate" name="bedate" required>
+    </div>
+    <br>
+    <div>
+        <input type="reset">
+        <input type="submit">
+    </div>
+    <hr>
+</form>
+
+<div>
+</div>
+<br>
+
+<div>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+
+    <button onclick="ChangeText()" style="background-color: red;">Change Text</button>
+    <p id="test">HELLO!</p>
+</div>
+
+
+<script>
+    let x = DoSomething("stringjjj");
+    let y = DoSomething(6);
+    document.getElementById("demo").innerHTML = x;
+    document.getElementById("demo2").innerHTML = y;
+
+    function DoSomething(a)
+    {
+        return a;
+    }
+
+    function ChangeText()
+    {
+        document.getElementById("test").innerHTML = "Good Bye!";
+    }
+</script>
+</html>
