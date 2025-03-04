@@ -1,0 +1,85 @@
+body{
+    background-position: center;
+    margin: 0 auto;
+    background: linear-gradient(slategrey, #0f0C29);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding: 0;
+    background-attachment: fixed;
+}
+
+.stitle{
+    text-align:center;
+    color: white;
+    font-family: calibri;
+    font-size: 100px;
+    font-weight: bold;
+
+    border: 10px solid black;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);
+    width: 90%;
+    
+    margin: 0 auto;
+
+    background-color:  slategrey;
+}
+
+.introtext{
+    text-align: left;
+    font-family: calibri;
+    font-size: 30px;
+    padding-left: 30%;
+    padding-right: 10%;
+    color: white;
+}
+
+.intropic{
+    float: left;
+
+    border: 10px solid black;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);
+    background-color:  slategrey;
+
+    width: 15%;
+    margin-left: 5%;
+}
+
+.breakline{
+    width: 90%;
+    border: 10px solid black;
+    border-radius: 10px
+}
+
+.buttonhold{
+    border: 10px solid black;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);
+
+    width: 90%;
+    margin: 0 auto;
+
+    padding: 10px;
+    text-align: center;
+}
+.listtext{
+    color: white;
+    font-family: calibri;
+    font-size: 30px;
+}
+.pic{
+    margin: 0 auto;
+    text-align: center;
+    background-color: black;
+
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 10px;
+}
+.pic:hover{
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    transform: scale(1.2);
+}

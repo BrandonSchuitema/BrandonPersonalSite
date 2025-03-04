@@ -3,88 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>document</title>
+    <link rel="stylesheet" href="indexStyle.css">
+    <title>Home</title>
 </head>
 <body>
-    <input type="number" name="price" id="price">
-    <button id="add">Test Button</button>
-
-    <p>List of Read Books</p>
-    <ul id="list">
-        <li>Read Books:</li>
-    </ul>
-
-    <script>
-        const list = document.getElementById('list');
-        const price = document.getElementById('price');
-    
-        const add = document.getElementById('add');
-        add.addEventListener('click', (event) => {
-            const li = document.createElement('li');
-            const liText = document.createTextNode(price.value);
-            li.appendChild(liText);
-            list.appendChild(li);
-    
-            price.value = '';
-        })
-    </script>
+    <!--Something might go here.-->
 </body>
 
-<div>
-    <p>The books that the Brandon has read will go here.</p>
-    <p>This site will become the electronic version of my Book Journal. Something that can be updated from anywhere.</p>
-</div>
-
-<form>
-    <p>Add new Books:</p>
-    <hr>
-    <div>
-        <label for="bname">Name:</label>
-        <input type="text" id="bname" name="bname" placeholder="Name...." required>
-        <label for="brate">Rating:</label>
-        <input type="number" id="brate" name="brate" placeholder="5..." min="0" max="5" required>
-        <label for="btalk">Description</label>
-        <input type="text" id="btalk" name="btalk" placeholder="Description...">
-        <label for="bsdate">Start Date</label>
-        <input type="date" id="bsdate" name="bsdate" required>
-        <label for="bedate">End Date</label>
-        <input type="date" id="bedate" name="bedate" required>
-    </div>
-    <br>
-    <div>
-        <input type="reset">
-        <input type="submit">
-    </div>
-    <hr>
-</form>
-
-<div>
-</div>
 <br>
 
 <div>
-    <p id="demo"></p>
-    <p id="demo2"></p>
-
-    <button onclick="ChangeText()" style="background-color: red;">Change Text</button>
-    <p id="test">HELLO!</p>
+    <p class="stitle">Brandon's Book Reviews</p>
 </div>
 
+<br>
 
-<script>
-    let x = DoSomething("stringjjj");
-    let y = DoSomething(6);
-    document.getElementById("demo").innerHTML = x;
-    document.getElementById("demo2").innerHTML = y;
+<div>
+    <P class="intropic"><img src="Images/youtube_racheal_background_potato_v1.png" width="100%" height="200px"></P>
+    <p class="introtext">
+        <br>
+        Brandon Schuitema reads a lot of books, and he likes to talk about this. This is a place where he can do that.
+        This will also be a place where the Brandon can practice his website making skills.
+        So, the site will likely change a bunch over time. But books and their reviews will always remain the top priority.
+    </p>
+</div>
 
-    function DoSomething(a)
-    {
-        return a;
-    }
+<br>
 
-    function ChangeText()
-    {
-        document.getElementById("test").innerHTML = "Good Bye!";
-    }
-</script>
+<hr class="breakline">
+
+<br>
+
+<div>
+    <p style="text-align: center; color: white;">READ BOOKS</p>
+</div>
+
+<br>
+
+<div class="buttonhold">
+    <P class="listtext">OVERLORD</P>
+    <button class="pic"><img src="Images/OverlordVol1.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/OverlordVol2.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/OverlordVol3.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/OverlordVol4.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/OverlordVol5.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/OverlordVol6.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/OverlordVol7.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/OverlordVol8.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/OverlordVol9.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/OverlordVol10.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/OverlordVol11.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/OverlordVol12.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/OverlordVol13.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/OverlordVol14.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/OverlordVol15.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/OverlordVol16.jpg" width="150px" height="200px"></button>
+</div>
+
+<br>
+
+<div class="buttonhold">
+    <p class="listtext">NO GAME NO LIFE</p>
+    <button class="pic"><img src="Images/No Game No Life/NoGameNoLifeVol1.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/No Game No Life/NoGameNoLifeVol2.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/No Game No Life/NoGameNoLifeVol3.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/No Game No Life/NoGameNoLifeVol4.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/No Game No Life/NoGameNoLifeVol5.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/No Game No Life/NoGameNoLifeVol6.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/No Game No Life/NoGameNoLifeVol7.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/No Game No Life/NoGameNoLifeVol8.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/No Game No Life/NoGameNoLifeVol9.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/No Game No Life/NoGameNoLifeVol10.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/No Game No Life/NoGameNoLifeVol11.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/No Game No Life/NoGameNoLifeWarGame.jpg" width="150px" height="200px"></button>
+</div>
+
+<br>
+
+<div class="buttonhold">
+    <p class="listtext">MONSTER GIRLS</p>
+    <button class="pic"><img src="Images/Monster Girl/MonsterGirlDoctorVol0.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/Monster Girl/MonsterGirlDoctorVol1.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/Monster Girl/MonsterGirlDoctorVol2.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/Monster Girl/MonsterGirlDoctorVol3.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/Monster Girl/MonsterGirlDoctorVol4.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/Monster Girl/MonsterGirlDoctorVol5.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/Monster Girl/MonsterGirlDoctorVol6.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/Monster Girl/MonsterGirlDoctorVol7.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/Monster Girl/MonsterGirlDoctorVol8.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/Monster Girl/MonsterGirlDoctorVol9.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/No Game No Life/NoGameNoLifeVol11.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/Monster Girl/MonsterGirlDoctorVol10.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/Monster Girl/MonsterMusumeVol1.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/Monster Girl/MonsterMusumeVol2.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/Monster Girl/MonsterMusumeVol3.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/Monster Girl/MonsterMusumeVol4.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/Monster Girl/MonsterMusumeVol5.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/Monster Girl/MonsterMusumeVol6.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/Monster Girl/MonsterMusumeVol7.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/Monster Girl/MonsterMusumeVol8.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/Monster Girl/MonsterMusumeVol9.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/Monster Girl/MonsterMusumeVol10.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/Monster Girl/MonsterMusumeVol11.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/Monster Girl/MonsterMusumeVol12.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/Monster Girl/MonsterMusumeVol13.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/Monster Girl/MonsterMusumeVol14.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/Monster Girl/MonsterMusumeVol15.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/Monster Girl/MonsterMusumeVol16.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/Monster Girl/MonsterMusumeVol17.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/Monster Girl/MonsterMusumeVol18.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/Monster Girl/MonsterMusumeJob.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/Monster Girl/MonsterGirlEncyclopediaVol1.jpg" width="150px" height="200px"></button>
+    <button class="pic"><img src="Images/Monster Girl/MonsterGirlEncyclopediaVol2.jpg" width="150px" height="200px"></button>
+</div>
+
+<br>
+
 </html>
