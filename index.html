@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="indexStyle.css">
+    <script src="indexCode.js" defer></script>
+
     <title>Home</title>
 </head>
 <body>
@@ -40,11 +42,13 @@
 
 <br>
 
+<button id="button">TEST BUTTON</button>
+
 <div class="buttonhold">
     <P class="listtext">OVERLORD</P>
-    <button class="pic"><img src="Images/OverlordVol1.jpg" width="150px" height="200px"></button>
-    <button class="pic"><img src="Images/OverlordVol2.jpg" width="150px" height="200px"></button>
-    <button class="pic"><img src="Images/OverlordVol3.jpg" width="150px" height="200px"></button>
+    <button onclick="ShowReview()" class="pic"><img src="Images/OverlordVol1.jpg" width="150px" height="200px"><p id="review"></p></button>
+    <button onclick="ShowOverlordVol2Review()" class="pic"><img src="Images/OverlordVol2.jpg" width="150px" height="200px"><p id="review2"></p></button>
+    <button onclick="ShowOverlordVol3Review()" class="pic"><img src="Images/OverlordVol3.jpg" width="150px" height="200px"><p id="review3"></p></button>
     <button class="pic"><img src="Images/OverlordVol4.jpg" width="150px" height="200px"></button>
     <button class="pic"><img src="Images/OverlordVol5.jpg" width="150px" height="200px"></button>
     <button class="pic"><img src="Images/OverlordVol6.jpg" width="150px" height="200px"></button>
